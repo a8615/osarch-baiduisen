@@ -1,0 +1,3 @@
+FriendlyName: ShiJi 512GB
+MediaType: SSD
+BusType: SATA

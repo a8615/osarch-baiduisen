@@ -1,0 +1,3 @@
+Name: Intel(R)N95
+NumberOfCores:4
+NumberOfLogicalProcessors:4

@@ -1,0 +1,12 @@
+﻿
+Model       MediaType BusType
+-----       --------- -------
+ShiJi 512GB SSD       SATA   
+
+
+
+Name      Used         Free
+----      ----         ----
+D    104587264 165569368064
+
+

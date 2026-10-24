@@ -1,3 +1,14 @@
+Network Diagram
+
+Internet
+   |
+Host PC (Windows)
+   |
+NAT Virtual Network
+   |-- Ubuntu VM (IP: 192.168.240.129)
+   |-- Win11 VM (IP: 192.168.240.130)
+
+
 Network: I used NAT. It allows VMs to reach each other and the internet. Bridged failed due to campus MAC filtering. Host-only has no internet.
  Firewall: Ping failed initially because Windows blocks ICMP by default. I added a rule to allow ICMPv4 from LocalSubnet and I did not turn off the firewall.
  Experiment: Host RAM is 15.7 GB. I assigned 16 GB (8+8) to VMs.

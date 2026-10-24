@@ -1,10 +1,10 @@
 # Operating System Architecture — build log
 
-**Student:**
-**Group:**
-**Host machine:**
-**Hypervisor:**
-**Guest operating systems:**
+**Student:**Aimaral Baiduisen
+**Group:** 1
+**Host machine:**Windows 11
+**Hypervisor:**VMware Workstation Pro
+**Guest operating systems:**Ubuntu
 
 ## Labs
 
@@ -28,11 +28,11 @@
 
 | # | Title | Folder | Submitted |
 |---|-------|--------|-----------|
-| 1 | VM build document | [tickets/ticket1-vm-build-doc](tickets/ticket1-vm-build-doc) | |
-| 2 | Office hardware specification | [tickets/ticket2-office-spec](tickets/ticket2-office-spec) | |
-| 3 | Network fault diagnosis | [tickets/ticket3-network-fault](tickets/ticket3-network-fault) | |
-| 4 | HR staff report script | [tickets/ticket4-hr-csv](tickets/ticket4-hr-csv) | |
-| 5 | Onboarding and offboarding | [tickets/ticket5-onboarding](tickets/ticket5-onboarding) | |
+| 1 | VM build document |  [tickets/ticket1-vm-build-doc](tickets/ticket1-vm-build-doc)  | |
+| 2 | Office hardware specification |  [tickets/ticket2-office-spec](tickets/ticket2-office-spec)  | |
+| 3 | Network fault diagnosis |  [tickets/ticket3-network-fault](tickets/ticket3-network-fault)  | |
+| 4 | HR staff report script |  [tickets/ticket4-hr-csv](tickets/ticket4-hr-csv)  | |
+| 5 | Onboarding and offboarding |  [tickets/ticket5-onboarding](tickets/ticket5-onboarding)  | |
 
 ## Tool of the Week
 
@@ -42,7 +42,7 @@ Week __ — `____` : [tools/____.md](tools/)
 
 | Assignment | Tool | What for |
 |------------|------|----------|
-| | | |
+| Repository setup | Gemini | Git and folder structure help |
 
 > Declaring this costs nothing. Not declaring it, when it comes up at the
 > defence, costs the assignment.

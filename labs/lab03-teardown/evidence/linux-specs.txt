@@ -1,1 +1,15 @@
+Linux VM Specifications:
+Baseboard:
+Manufacturer: Intel Corporation
+Product Name: 440BX Desktop Reference Platform
+Storage:
+NAME    MODEL                    SIZE    ROTA    TRAN
+sda     VMware Virtual S         25G     1       spi
+sr0     VMware Virtual SATA CDRW 1024M   0       sata
 
+Onboard Devices:
+Video: VMware SVGA II
+Sound: ES1371
+
+Memory
+Size: No Module Installed

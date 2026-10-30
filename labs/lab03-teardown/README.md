@@ -1,12 +1,12 @@
 # Lab 3 — Teardown, and the same machine from the command line
 
-Pair:                     Driver first half:
-Machine:
-Date:
+Pair:   Aimaral Baiduisen                 Driver first half:
+Machine: X133-ADN
+Date:2026-10-31
 
 ## What I did
 
-Steps, with commands in code blocks. Not prose about the steps.
+First, I used PowerShell on my Windows host to find out what hardware I actually have. Because it's an unbranded laptop, Win32_ComputerSystem just gave me "Default string", so I had to dig deeper
 
 ```
 <command>

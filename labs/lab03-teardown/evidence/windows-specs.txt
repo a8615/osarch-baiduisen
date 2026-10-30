@@ -1,1 +1,230 @@
+**********************
+Начало записи сценария Windows PowerShell
+Время начала: 20261030223826
+Имя пользователя: DESKTOP-L90681B\1
+Запуск от имени пользователя: DESKTOP-L90681B\1
+Имя конфигурации: 
+Компьютер: DESKTOP-L90681B (Microsoft Windows NT 10.0.26200.0)
+Ведущее приложение: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ИД процесса: 18556
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Транскрибирование запущено, выходной файл windows-specs.txt
+PS C:\Users\admin\Downloads> Get-CimInstance Win32_Processor | Format-List *
+
+
+Availability                            : 3
+CpuStatus                               : 1
+CurrentVoltage                          : 9
+DeviceID                                : CPU0
+ErrorCleared                            :
+ErrorDescription                        :
+LastErrorCode                           :
+LoadPercentage                          : 27
+Status                                  : OK
+StatusInfo                              : 3
+AddressWidth                            : 64
+DataWidth                               : 64
+ExtClock                                : 100
+L2CacheSize                             : 2048
+L2CacheSpeed                            :
+MaxClockSpeed                           : 1700
+PowerManagementSupported                : False
+ProcessorType                           : 3
+Revision                                :
+SocketDesignation                       : U3E1
+Version                                 :
+VoltageCaps                             :
+Caption                                 : Intel64 Family 6 Model 190 Stepping 0
+Description                             : Intel64 Family 6 Model 190 Stepping 0
+InstallDate                             :
+Name                                    : Intel(R) N95
+ConfigManagerErrorCode                  :
+ConfigManagerUserConfig                 :
+CreationClassName                       : Win32_Processor
+PNPDeviceID                             :
+PowerManagementCapabilities             :
+SystemCreationClassName                 : Win32_ComputerSystem
+SystemName                              : DESKTOP-L90681B
+CurrentClockSpeed                       : 1200
+Family                                  : 1
+OtherFamilyDescription                  :
+Role                                    : CPU
+Stepping                                :
+UniqueId                                :
+UpgradeMethod                           : 1
+Architecture                            : 9
+AssetTag                                : To Be Filled By O.E.M.
+Characteristics                         : 236
+L3CacheSize                             : 6144
+L3CacheSpeed                            : 0
+Level                                   : 6
+Manufacturer                            : GenuineIntel
+NumberOfCores                           : 4
+NumberOfEnabledCore                     : 4
+NumberOfLogicalProcessors               : 4
+PartNumber                              : To Be Filled By O.E.M.
+ProcessorId                             : BFEBFBFF000B06E0
+SecondLevelAddressTranslationExtensions : False
+SerialNumber                            : xxxx
+ThreadCount                             : 4
+VirtualizationFirmwareEnabled           : False
+VMMonitorModeExtensions                 : False
+PSComputerName                          :
+CimClass                                : root/cimv2:Win32_Processor
+CimInstanceProperties                   : {Caption, Description, InstallDate, Name...}
+CimSystemProperties                     : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+PS C:\Users\admin\Downloads> Get-CimInstance Win32_PhysicalMemory | Format-List *
+
+
+Caption               : Физическая память
+Description           : Физическая память
+InstallDate           :
+Name                  : Физическая память
+Status                :
+CreationClassName     : Win32_PhysicalMemory
+Manufacturer          : Vasekey
+Model                 :
+OtherIdentifyingInfo  :
+PartNumber            :
+PoweredOn             :
+SerialNumber          : 00001D09
+SKU                   :
+Tag                   : Physical Memory 0
+Version               :
+HotSwappable          :
+Removable             :
+Replaceable           :
+FormFactor            : 12
+BankLabel             : BANK 0
+Capacity              : 17179869184
+DataWidth             : 64
+InterleavePosition    : 0
+MemoryType            : 0
+PositionInRow         :
+Speed                 : 2667
+TotalWidth            : 64
+Attributes            : 2
+ConfiguredClockSpeed  : 2667
+ConfiguredVoltage     : 1200
+DeviceLocator         : Controller0-ChannelA-DIMM0
+InterleaveDataDepth   : 0
+MaxVoltage            : 1200
+MinVoltage            : 1200
+SMBIOSMemoryType      : 26
+TypeDetail            : 128
+PSComputerName        :
+CimClass              : root/cimv2:Win32_PhysicalMemory
+CimInstanceProperties : {Caption, Description, InstallDate, Name...}
+CimSystemProperties   : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+PS C:\Users\admin\Downloads> Get-PhysicalDisk | Format-List *
+
+
+ClassName                        : MSFT_PhysicalDisk
+Usage                            : Auto-Select
+OperationalStatus                : OK
+UniqueIdFormat                   : Vendor Id
+HealthStatus                     : Healthy
+BusType                          : SATA
+CannotPoolReason                 : Insufficient Capacity
+SupportedUsages                  : {Auto-Select, Manual-Select, Hot Spare, Retired...}
+MediaType                        : SSD
+SpindleSpeed                     : 0
+ObjectId                         : {1}\\DESKTOP-L90681B\root/Microsoft/Windows/Storage/Providers_v2\SPACES_PhysicalDisk
+                                   .ObjectId="{11d9545d-5c4e-11f0-8df1-806e6f6e6963}:PD:{c5f01a14-6ee7-6492-0827-caf976
+                                   dbab37}"
+PassThroughClass                 :
+PassThroughIds                   :
+PassThroughNamespace             :
+PassThroughServer                :
+UniqueId                         :      ATAShiJi 512GB
+Description                      :
+FriendlyName                     : ShiJi 512GB
+Manufacturer                     :
+Model                            : ShiJi 512GB
+OperationalDetails               :
+PhysicalLocation                 : Integrated : Bus 0 : Device 23 : Function 0 : Adapter 0 : Port 1
+SerialNumber                     : AA000000000000002009
+AdapterSerialNumber              :
+AllocatedSize                    : 512109142016
+CanPool                          : False
+DeviceId                         : 0
+EnclosureNumber                  :
+FirmwareVersion                  : Y0807A0
+FruId                            : AA000000000000002009
+IsIndicationEnabled              : False
+IsPartial                        : True
+LogicalSectorSize                : 512
+OtherCannotPoolReasonDescription :
+PartNumber                       :
+PhysicalSectorSize               : 512
+Size                             : 512110190592
+SlotNumber                       :
+SoftwareVersion                  :
+StoragePoolUniqueId              :
+VirtualDiskFootprint             : 0
+PSComputerName                   :
+CimClass                         : root/microsoft/windows/storage:MSFT_PhysicalDisk
+CimInstanceProperties            : {ObjectId, PassThroughClass, PassThroughIds, PassThroughNamespace...}
+CimSystemProperties              : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+PS C:\Users\admin\Downloads> Get-CimInstance Win32_BaseBoard | Format-List *
+
+
+Status                  : OK
+Name                    : Основная плата
+PoweredOn               : True
+Caption                 : Основная плата
+Description             : Основная плата
+InstallDate             :
+CreationClassName       : Win32_BaseBoard
+Manufacturer            : CORE-SHARP
+Model                   :
+OtherIdentifyingInfo    :
+PartNumber              :
+SerialNumber            : 20250928004X133AADNNNG1254201226
+SKU                     :
+Tag                     : Base Board
+Version                 : Default string
+Depth                   :
+Height                  :
+HotSwappable            : False
+Removable               : False
+Replaceable             : True
+Weight                  :
+Width                   :
+HostingBoard            : True
+RequirementsDescription :
+RequiresDaughterBoard   : False
+SlotLayout              :
+SpecialRequirements     :
+ConfigOptions           : {Default string}
+Product                 : X133-ADN
+PSComputerName          :
+CimClass                : root/cimv2:Win32_BaseBoard
+CimInstanceProperties   : {Caption, Description, InstallDate, Name...}
+CimSystemProperties     : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+PS C:\Users\admin\Downloads> Stop-Transcript
+**********************
+Конец записи протокола Windows PowerShell
+Время окончания: 20261030223836
+**********************
 

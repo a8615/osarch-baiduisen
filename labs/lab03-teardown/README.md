@@ -8,9 +8,8 @@ Date:2026-10-31
 
 First, I used PowerShell on my Windows host to find out what hardware I actually have. Because it's an unbranded laptop, Win32_ComputerSystem just gave me "Default string", so I had to dig deeper
 
-powershell
-
-On Windows PowerShell (Host)
+```powershell
+#On Windows PowerShell (Host)
 Get-CimInstance Win32_Processor | Format-List *
 Get-CimInstance Win32_PhysicalMemory | Format-List *
 Get-PhysicalDisk | Format-List *

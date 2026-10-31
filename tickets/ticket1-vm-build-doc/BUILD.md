@@ -28,8 +28,4 @@ In the VM settings, under Network Adapter, choose *NAT*.
 
 > Check: run ip addr inside the guest. You should see an address like 192.168.x.x, different from the host's.
 
-## Step 4: Verifying the Setup
 
-I verified that both machines can reach the internet and communicate with each other using a ping test.
-
-![Snapshot of ping](evidence/06-snapshot-list.png)

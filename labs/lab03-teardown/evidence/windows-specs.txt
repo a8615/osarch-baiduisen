@@ -157,7 +157,7 @@ Manufacturer                     :
 Model                            : ShiJi 512GB
 OperationalDetails               :
 PhysicalLocation                 : Integrated : Bus 0 : Device 23 : Function 0 : Adapter 0 : Port 1
-SerialNumber                     : AA000000000000002009
+SerialNumber                     : XXXX
 AdapterSerialNumber              :
 AllocatedSize                    : 512109142016
 CanPool                          : False
@@ -197,7 +197,7 @@ Manufacturer            : CORE-SHARP
 Model                   :
 OtherIdentifyingInfo    :
 PartNumber              :
-SerialNumber            : 20250928004X133AADNNNG1254201226
+SerialNumber            : XXXX
 SKU                     :
 Tag                     : Base Board
 Version                 : Default string

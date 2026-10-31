@@ -1,4 +1,4 @@
-# Build Document: How to set up a test VM
+## Build Document: How to set up a test VM
 
 This document explains how to set up the Ubuntu and Windows test VMs from scratch using VMware Workstation.
 

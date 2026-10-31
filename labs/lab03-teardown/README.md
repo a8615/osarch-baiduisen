@@ -16,7 +16,7 @@ Get-CimInstance Win32_Processor | Format-List *
 Get-CimInstance Win32_PhysicalMemory | Format-List *
 Get-PhysicalDisk | Format-List *
 Get-CimInstance Win32_BaseBoard | Format-List *
-```
+
 
 Then I ran similar commands in my Ubuntu VM to compare the hardware.
 

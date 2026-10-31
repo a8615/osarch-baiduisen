@@ -28,7 +28,7 @@ The request leaves out several critical details. I had to make the following ass
 *   [evidence/02-disk-settings.png](evidence/02-disk-settings.png) — Setting the disk to 40GB.
 *   [evidence/03-network-adapter.png](evidence/03-network-adapter.png) — Choosing NAT mode.
 *   [evidence/04-guest-uname.txt](evidence/04-guest-uname.txt) — Ubuntu system info.
-*   [evidence/05-ping-between-guests.txt](evidence/05-ping-between-guests.txt) — Ping test (0% loss).
+*   [evidence/05-ping-between-guests.txt](evidence/05-ping-between-guests.txt) — Ping test.
 *   [evidence/06-snapshot-list.png](evidence/06-snapshot-list.png) — The snapshot list.
 
 ## 5. What I would do differently

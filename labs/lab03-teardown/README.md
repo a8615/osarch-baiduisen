@@ -9,7 +9,8 @@ Date:2026-10-31
 First, I used PowerShell on my Windows host to find out what hardware I actually have. Because it's an unbranded laptop, Win32_ComputerSystem just gave me "Default string", so I had to dig deeper
 
 powershell
-# On Windows PowerShell (Host)
+
+On Windows PowerShell (Host)
 Get-CimInstance Win32_Processor | Format-List *
 Get-CimInstance Win32_PhysicalMemory | Format-List *
 Get-PhysicalDisk | Format-List *
@@ -17,8 +18,7 @@ Get-CimInstance Win32_BaseBoard | Format-List *
 
 Then I ran similar commands in my Ubuntu VM to compare the hardware.
 
-bash
-# On Linux (Guest VM)
+On Linux (Guest VM)
 lscpu > linux-specs.txt
 free -h >> linux-specs.txt
 sudo dmidecode -t memory >> linux-specs.txt

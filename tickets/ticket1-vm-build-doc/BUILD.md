@@ -28,4 +28,26 @@ In the VM settings, under Network Adapter, choose *NAT*.
 
 > Check: run ip addr inside the guest. You should see an address like 192.168.x.x, different from the host's.
 
+## Step 4: Verifying the System
+
+After installation, I checked the system details inside the guest to verify it was running correctly.
+
+*Evidence:* evidence/04-guest-uname.txt shows the Linux kernel version and architecture.
+
+## Step 5: Testing the Network
+
+I verified that both virtual machines can reach the internet and communicate with each other.
+
+*Why this is important:* A developer needs network access to download packages and test client-server apps.
+
+*Evidence:* evidence/05-ping-between-guests.txt shows a successful ping test with 0% packet loss between the two VMs.
+
+## Step 6: Taking a Snapshot
+
+Finally, I took a snapshot of the clean installation.
+
+*Why this is important:* If the new developer breaks the OS while testing, we can instantly revert to this clean state using the snapshot, which saves hours of reinstallation time.
+
+![Snapshot of ping](evidence/06-snapshot-list.png)
+
 

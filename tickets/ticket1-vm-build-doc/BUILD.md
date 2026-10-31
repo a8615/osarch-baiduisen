@@ -26,8 +26,6 @@ In the VM settings, under Network Adapter, choose *NAT*.
 
 ![Network Adapter](evidence/03-network-adapter.png)
 
- Check: run ip addr inside the guest. You should see an address like 192.168.x.x, different from the host's.
-
 ## Step 4: Verifying the System
 
 After installation, I checked the system details inside the guest to verify it was running correctly.

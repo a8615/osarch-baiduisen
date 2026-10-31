@@ -1,7 +1,7 @@
 **********************
 Начало записи сценария Windows PowerShell
 Время начала: 20261030223826
-Имя пользователя: DESKTOP-L90681B\1
+Имя пользователя: DESKTOP-L90681B
 Запуск от имени пользователя: DESKTOP-L90681B\1
 Имя конфигурации: 
 Компьютер: DESKTOP-L90681B (Microsoft Windows NT 10.0.26200.0)
@@ -98,7 +98,7 @@ Model                 :
 OtherIdentifyingInfo  :
 PartNumber            :
 PoweredOn             :
-SerialNumber          : 00001D09
+SerialNumber          : XXXX
 SKU                   :
 Tag                   : Physical Memory 0
 Version               :

@@ -1,4 +1,4 @@
-# Feedback on <Aimaral Baiduisen>'s BUILD.md
+# Feedback on <Aimaral>'s BUILD.md
 Reviewer: <Akhazik Abdukadyr>
 Commit reviewed: <https://github.com/Aknazik07/osarch-abdukadirova/tree/c570d33de87ecf000423d9d5109bac39e7a60d4f/tickets>
 Hypervisor I used: VMware Workstation 

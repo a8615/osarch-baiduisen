@@ -6,9 +6,25 @@
 *   Manual Link: This is an unbranded whitebox laptop. No official manual exists. As permitted by the brief, I used a generic teardown reference for N95 laptops.
 
 ## 2. Components
-*   Memory: SO-DIMM slot. Connects to CPU. Limits: OS shows FormFactor: 12 (not soldered), currently holding 16GB.
-*   Storage: M.2 slot. Connects to chipset. Limits: 512GB ShiJi SATA SSD.
-*   Cooling: Fan and heatsink. Connects to CPU. Limits: Limits sustained heavy workloads.
+
+*(Note: As this is an unbranded OEM laptop, no official exploded view diagram exists. The annotated figure below shows a generic Intel N95 motherboard layout as a reference for the components).*
+
+![Generic N95 Board](evidence/manual-figures/n95-board.png)
+
+Here are the identified components based on the figure and OS data:
+
+*   Component 1 - Memory (RAM):
+    *   What: SO-DIMM memory slot.
+    *   Connects to: The CPU's memory controller.
+    *   Limits: OS reports FormFactor: 12 (SODIMM), meaning it is socketed. It currently holds a 16GB module.
+*   Component 2 - Storage (SSD):
+    *   What: M.2 slot.
+    *   Connects to: Motherboard chipset.
+    *   Limits: OS reports a 512GB ShiJi SSD with BusType: SATA. 
+*   Component 3 - Cooling Fan:
+    *   What: Single fan and heatsink.
+    *   Connects to: CPU and motherboard fan header.
+    *   Limits: Limits sustained heavy workloads due to small size
 
 ## 3. Upgrade verdict
 

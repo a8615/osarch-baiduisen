@@ -7,25 +7,25 @@
 
 ## 2. Components
 
-*(Note: As this is an unbranded OEM laptop, no official exploded view diagram exists. The annotated figure below shows a generic Intel N95 motherboard layout as a reference for the components).*
+*(Note: As this is an unbranded OEM laptop, no official exploded view diagram exists. The figure below shows a generic Intel N95 motherboard layout used as a visual reference for the components).*
 
 <img width="447" height="447" alt="image" src="https://github.com/user-attachments/assets/20c3f308-9d39-465e-9340-e83ff89ec6db" />
 
-
-Here are the identified components based on the figure and OS data:
+Based on the figure above and OS data, here are the components:
 
 *   Component 1 - Memory (RAM):
-    *   What: SO-DIMM memory slot.
+    *   What: SO-DIMM memory slot (located on the board, though empty in this reference photo).
     *   Connects to: The CPU's memory controller.
-    *   Limits: OS reports FormFactor: 12 (SODIMM), meaning it is socketed. It currently holds a 16GB module.
+    *   Limits: OS reports FormFactor: 12 (SODIMM), meaning it is socketed. My host machine currently holds a 16GB module.
 *   Component 2 - Storage (SSD):
-    *   What: M.2 slot.
+    *   What: M.2 slot (labeled NVME/SATA on the board).
     *   Connects to: Motherboard chipset.
-    *   Limits: OS reports a 512GB ShiJi SSD with BusType: SATA. 
-*   Component 3 - Cooling Fan:
-    *   What: Single fan and heatsink.
-    *   Connects to: CPU and motherboard fan header.
-    *   Limits: Limits sustained heavy workloads due to small size
+    *   Limits: OS reports a 512GB ShiJi SSD with BusType: SATA. Can be upgraded with a larger M.2 drive.
+*   Component 3 - Cooling System:
+    *   What: Large black heatsink (covering the N95 CPU).
+    *   Connects to: CPU.
+    *   Limits: The passive/small fan design limits sustained heavy workloads.
+
 
 ## 3. Upgrade verdict
 

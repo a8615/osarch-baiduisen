@@ -9,7 +9,8 @@
 
 *(Note: As this is an unbranded OEM laptop, no official exploded view diagram exists. The annotated figure below shows a generic Intel N95 motherboard layout as a reference for the components).*
 
-![Generic N95 Board](evidence/manual-figures/n95-board.png)
+<img width="447" height="447" alt="image" src="https://github.com/user-attachments/assets/20c3f308-9d39-465e-9340-e83ff89ec6db" />
+
 
 Here are the identified components based on the figure and OS data:
 

@@ -53,6 +53,46 @@ DriveLetter FriendlyName FileSystemType DriveType HealthStatus OperationalStatus
 E           LAB4         NTFS           Fixed     Healthy      OK                          1.97 GB 1.98 GB
 ```
 ## Linux layout — before
+```
+NAME      SIZE TYPE FSTYPE      MOUNTPOINT
+
+loop0     1.5M loop squashfs   /snap/hwctl/131
+
+loop1    66.8M loop squashfs   /snap/core24/1643
+
+loop2    1.5M  loop squashfs   /snap/hwct1/123
+
+loop3    50.1M loop squashfs   /snap/snapd/27710
+
+sda        25G disk
+
+sda1        1M part
+
+sda2        2G part ext4       /boot
+
+sda3       23G part LVM2_member
+
+ubuntu--vg-ubuntu--lv 11.5G 1vm ext4
+
+sdb         2G disk
+
+sdc         2G disk
+
+sdd         2G disk
+
+sre       1024M rom
+```
+## Linux layout — after the rebuild
+
+| Role            | Device |
+|-----------------|--------|
+| Mirror half A   | sdb1   |
+| Failed half     | sdc1   |
+| Replacement     | sdd1   |
+
+## The question
+Your colleague deleted the wrong file from the mirror an hour ago.
+Does RAID 1 help? Why?
 
 ## What did not work the first time
 I made a typo in the parted command, missing a space between gpt and mkpart, which caused an error. I fixed it by adding the space.

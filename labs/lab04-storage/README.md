@@ -17,7 +17,10 @@ sudo mdadm /dev/md0 --add /dev/sdd1
 
 # Result
 Successfully built the RAID 1 array. Simulated a disk failure, verified data survival via checksums, and rebuilt the array using the spare disk. Windows disk was initialized as GPT, partitioned, and formatted as NTFS.
-### windows output
+# Lab 4-storage
+### windows 
+Disk 0: partition style GPT, firmware_type UEFI - because the system booted in UEFI mode.
+New disk: partition style GPT - because I chose GPT to support modern standards and avoid the 2TB limit.
 ```
 PS C:\WINDOWS\system32> $env:firmware_type
 UEFI
@@ -49,6 +52,8 @@ DriveLetter FriendlyName FileSystemType DriveType HealthStatus OperationalStatus
 ----------- ------------ -------------- --------- ------------ ----------------- -------------      ----
 E           LAB4         NTFS           Fixed     Healthy      OK                          1.97 GB 1.98 GB
 ```
+## Linux layout — before
+
 ## What did not work the first time
 I made a typo in the parted command, missing a space between gpt and mkpart, which caused an error. I fixed it by adding the space.
 At least one thing. What I saw, what it turned out to be, what I did about it.

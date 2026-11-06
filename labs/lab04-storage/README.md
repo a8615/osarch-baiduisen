@@ -48,9 +48,8 @@ PS C:\WINDOWS\system32> Format-Volume -DriveLetter E -FileSystem NTFS -NewFileSy
 DriveLetter FriendlyName FileSystemType DriveType HealthStatus OperationalStatus SizeRemaining      Size
 ----------- ------------ -------------- --------- ------------ ----------------- -------------      ----
 E           LAB4         NTFS           Fixed     Healthy      OK                          1.97 GB 1.98 GB
+```
 ## What did not work the first time
-At least one thing. What I saw, what it turned out to be, what I did about it.
-
 I made a typo in the parted command, missing a space between gpt and mkpart, which caused an error. I fixed it by adding the space.
 At least one thing. What I saw, what it turned out to be, what I did about it.
 

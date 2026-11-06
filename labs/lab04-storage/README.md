@@ -83,6 +83,59 @@ sdd         2G disk
 sre       1024M rom
 ```
 ## Linux layout — after the rebuild
+```
+Fri Nov 6 05:00:55 PM UTC 2026
+
+Personalities: [raidi]
+
+mde: active raidi sdd1 [2] sdb1 [0]
+     2093056 blocks super 1.2 [2/2] [UU]
+     bitmap: 0/1 pages [0KB], 65536KB chunk
+
+unused devices: <none>
+
+/dev/md0:
+    Version:1.2
+    Creation Time: Fri Nov 6 16:16:55 2026
+    Raid Level: raidi
+    Array Size: 2093056 (2044.00 MiB 2143.29 MB)
+   Used Dev Size: 2093056 (2044.00 MiB 2143.29 MB)
+
+   Raid Devices: 2
+
+    Persistence: Superblock is persistent
+
+    Total Devices: 2
+
+   Intent Bitmap: Internal
+
+   Update Time: Fri Nov 6 16:55:41 2026
+
+    State: clean
+
+   Active Devices: 2
+
+   Horking Devices: 2
+
+    Failed Devices:0
+
+   Spare Devices: 0
+
+   Consistency Policy: bitmap
+
+    Name: lab1:0 (local to host labi)
+
+     UUID: a35f1073:a86ff0cd:96299564:7e185619
+
+     Events: 49
+
+Number    Major      Hinor       RaidDevice    State
+
+0           8         17            0    active sync   /dev/sdb1
+     
+2           8         49            1    active sync    /dev/sdd1
+
+```
 
 | Role            | Device |
 |-----------------|--------|
@@ -93,6 +146,8 @@ sre       1024M rom
 ## The question
 Your colleague deleted the wrong file from the mirror an hour ago.
 Does RAID 1 help? Why?
+
+No, it doesn't help. Because RAID 1 is a mirror, it writes the deletion to both disks at the same time. To get the file back, you need a real backup, like an external hard drive.
 
 ## What did not work the first time
 I made a typo in the parted command, missing a space between gpt and mkpart, which caused an error. I fixed it by adding the space.

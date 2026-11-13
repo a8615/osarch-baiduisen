@@ -1,0 +1,89 @@
+loop0       1.5M loop squashfs     /snap/hwct1/131
+
+loop1       66.8M loop squashfs     /snap/core24/1643
+
+Loop2       1.5M loop squashfs      /snap/hwct1/123
+
+loop3       50.1M loop squashfs     /snap/snapd/27710
+
+sda           25G disk
+sda1           1M part
+sda2           20 part ext4        /boot
+sda3           23G part LVM2_member
+    ubuntu--vg-ubuntu--1v 11.5G 1vm ext4
+
+
+sdb            2G disk
+sdc            2G disk
+sdd            2G disk
+sr0            1024M rom
+
+student@lab1:/lab04/evidences cat array-healthy.txt
+
+Fri Nov 6 04:18:08 PM UTC 2026
+
+Personalities: [raidi]
+
+mde active raid1 sdc1 [1] sdb1 [0]
+
+2093056 blocks super 1.2 [2/2] [UU]
+
+bitmap: 0/1 pages [0KB], 65536KB chunk
+
+unused devices: <none>
+
+/dev/mde:
+
+Version: 1.2
+
+Raid Level: raidi
+
+Creation Time: Fri Nov 6 16:16:55 2026
+
+Array Size: 2093056 (2044.00 MiB 2143.29 MB)
+
+Used Dev Size: 2093056 (2044.00 MiB 2143.29 MB)
+
+Raid Devices: 2
+
+Persistence: Superblock is persistent
+
+Total Devices: 2
+
+Intent Bitmap: Internal
+
+Update Time: Fri Nov 6 16:17:05 2026
+
+State: clean
+
+Active Devices: 2
+
+Working Devices: 2
+
+Failed Devices: 0
+
+Spare Devices: 0
+
+Consistency Policy: bitmap
+
+Name: lab1:0 (local to host labi)
+
+UUID: a35f1073:a86ff0cd:962095b4:7e185bf9
+
+Events: 18
+
+Number    Major    Minor   RaidDevice   State
+
+0            8       17        0         active sync    /dev/sdb1
+
+
+1            8       33        1         active sync     /dev/sdc1
+
+
+
+
+
+
+
+
+

@@ -1,10 +1,10 @@
 # Operating System Architecture — build log
 
-**Student:**
-**Group:**
-**Host machine:**
-**Hypervisor:**
-**Guest operating systems:**
+**Student:**Aimaral Baiduisen
+**Group:**1
+**Host machine:**Windows 11
+**Hypervisor:**VMware Workstation Pro
+**Guest operating systems:**Ubuntu
 
 ## Labs
 
@@ -42,7 +42,7 @@ Week __ — `____` : [tools/____.md](tools/)
 
 | Assignment | Tool | What for |
 |------------|------|----------|
-| | | |
+| Repository setup|Gemini	 |Git and folder structure help |
 
 > Declaring this costs nothing. Not declaring it, when it comes up at the
 > defence, costs the assignment.

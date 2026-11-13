@@ -1,24 +1,9 @@
-# Lab 4 - Partition, mirror, fail, recover
+# Lab 4 - Storage
 
-Pair: None
-Driver first half: None
-Machine: VMware Workstation Pro
-Date: 07.11.2026
-
-## What I did
-I partitioned the disks in Linux, created a RAID 1 array, and formatted it. I also partitioned and formatted a disk in Windows.
-
-`bash
-# Key commands used:
-sudo parted /dev/sdb --script mklabel gpt mkpart lab4 1MiB 100% set 1 raid on
-sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb1 /dev/sdc1
-sudo mdadm /dev/md0 --fail /dev/sdc1
-sudo mdadm /dev/md0 --add /dev/sdd1
-Result
-
-Successfully built the RAID 1 array. Simulated a disk failure, verified data survival via checksums, and rebuilt the array using the spare disk. Windows disk was initialized as GPT, partitioned, and formatted as NTFS.
-
-Windows Output
+## Windows
+Disk 0: partition style GPT, firmware_type UEFI - because the system booted in UEFI mode.
+New disk: partition style GPT - because I chose GPT to support modern standards and avoid the 2TB limit.
+```
 PS C:\WINDOWS\system32> $env:firmware_type
 UEFI
 
@@ -39,8 +24,18 @@ PartitionNumber  DriveLetter Offset                                        Size 
 1                            17408                                    15.98 MB Reserved
 2                E           16777216                                  1.98 GB Basic
 
-Linux Layout - before
+PS C:\WINDOWS\system32> Initialize-Disk -Number 1 -PartitionStyle GPT
 
+PS C:\WINDOWS\system32> New-Partition -DiskNumber 1 -UseMaximumSize -DriveLetter E
+
+PS C:\WINDOWS\system32> Format-Volume -DriveLetter E -FileSystem NTFS -NewFileSystemLabel LAB4
+
+DriveLetter FriendlyName FileSystemType DriveType HealthStatus OperationalStatus SizeRemaining      Size
+----------- ------------ -------------- --------- ------------ ----------------- -------------      ----
+E           LAB4         NTFS           Fixed     Healthy      OK                          1.97 GB 1.98 GB
+```
+# Linux layout - before
+```
 NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 loop0    7:0    0   1.5M  1 loop /snap/hwctl/131
 loop1    7:1    0  66.8M  1 loop /snap/core24/1643
@@ -55,9 +50,9 @@ sdb     8:16    0     2G  0 disk
 sdc     8:32    0     2G  0 disk 
 sdd     8:48    0     2G  0 disk 
 sr0     11:0    1  1024M  0 rom
-Linux Layout - after rebuild
-
-`text
+```
+# Linux layout - after the rebuild
+```
 NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 loop0    7:0    0   1.5M  1 loop /snap/hwctl/131
 loop1    7:1    0  66.8M  1 loop /snap/core24/1643
@@ -76,4 +71,26 @@ sdc     8:32    0     2G  0 disk
 sdd     8:48    0     2G  0 disk 
 └─sdd1   8:49    0     2G  0 part 
   └─md0    9:0    0     2G  0 raid1 
-sr0     11:0    1  1024M  0 rom
+sr0     11:0    1  1024M  0 rom 
+```
+
+| Role             | Device |
+|------------------|--------|
+| Mirror half A    | sdb1   |
+| Failed half      | sdc1   |
+| Replacement      | sdd1   |
+
+# The question
+
+Your colleague deleted the wrong file from the mirror an hour ago. Does RAID 1 help? Why?
+
+No, it doesn't help. Because RAID 1 is a mirror, it writes the deletion to both disks at the same time. To get the file back, you need a real backup, like an external hard drive.
+
+## Evidence
+* evidence/ — one line per file on what it proves
+* lsblk-before.txt — Proves the initial layout of the disks.
+* array-healthy.txt — Proves the RAID 1 was active and healthy ([2/2] [UU]).
+* array-degraded.txt — Proves a disk was failed ([U_]).
+* checksum-before.txt — SHA256 before failure.
+* checksum-after-failure.txt — SHA256 after failure (matches before).
+* array-rebuilt.txt — Proves the array was restored using sdd1.

@@ -1,34 +1,48 @@
+# Operating System Architecture — build log
 
-# Lab 5 - Encoding forensics
+**Student:**
+**Group:**
+**Host machine:**
+**Hypervisor:**
+**Guest operating systems:**
 
-## Diagnosis (before the fix)
+## Labs
 
-- file says: Non-ISO extended-ASCII text, with CRLF line terminators
+| # | Topic | Folder | Status |
+|---|-------|--------|--------|
+| 0 | Inventory your own machine | [labs/lab00-inventory](labs/lab00-inventory) | |
+| 1 | Your first virtual machine | [labs/lab01-first-vm](labs/lab01-first-vm) | |
+| 2 | A Windows guest, and a network | [labs/lab02-windows-vm](labs/lab02-windows-vm) | |
+| 3 | Teardown | [labs/lab03-teardown](labs/lab03-teardown) | |
+| 4 | Partition, mirror, fail, recover | [labs/lab04-storage](labs/lab04-storage) | |
+| 5 | Encoding forensics | [labs/lab05-encoding](labs/lab05-encoding) | |
+| 6 | Live processes and memory pressure | [labs/lab06-processes](labs/lab06-processes) | |
+| 7 | CLI dojo | [labs/lab07-cli-dojo](labs/lab07-cli-dojo) | |
+| 8 | Bandit and your first bash script | [labs/lab08-bandit](labs/lab08-bandit) | |
+| 9 | Help-system scavenger hunt | [labs/lab09-powershell-help](labs/lab09-powershell-help) | |
+| 10 | The fleet report | [labs/lab10-pipeline](labs/lab10-pipeline) | |
+| 11 | One tool, two shells | [labs/lab11-two-shells](labs/lab11-two-shells) | |
+| 12 | Onboarding, twice | [labs/lab12-identity](labs/lab12-identity) | |
 
-- First 16 bytes: d2e0 e12e b93b d4c8 ce3b c4ee ebe6 edee
+## Tickets
 
-### Annotate the bytes
+| # | Title | Folder | Submitted |
+|---|-------|--------|-----------|
+| 1 | VM build document | [tickets/ticket1-vm-build-doc](tickets/ticket1-vm-build-doc) | |
+| 2 | Office hardware specification | [tickets/ticket2-office-spec](tickets/ticket2-office-spec) | |
+| 3 | Network fault diagnosis | [tickets/ticket3-network-fault](tickets/ticket3-network-fault) | |
+| 4 | HR staff report script | [tickets/ticket4-hr-csv](tickets/ticket4-hr-csv) | |
+| 5 | Onboarding and offboarding | [tickets/ticket5-onboarding](tickets/ticket5-onboarding) | |
 
-| Offset | Bytes | What they are |
+## Tool of the Week
 
-| :--- | :--- | :--- |
+Week __ — `____` : [tools/____.md](tools/)
 
-| 00 - 02 | d2 e0 e1 | Cyrillic/Kazakh letters (single-byte encoding) |
+## Use of AI assistants
 
-| 03 | 2e | Period . (ASCII) |
+| Assignment | Tool | What for |
+|------------|------|----------|
+| | | |
 
-| 04 - 06 | b9 3b d4 | Cyrillic/Kazakh letters |
--Encoding: RK1048 (or PT154) - evidence: iconv testing.
--Line ending: CRLF - evidence: file command shows CRLF.
--BOM: absent - evidence: starts with d2e0.
-## what went wrong
--Excel: No BOM, assumed ANSI
--LibreOffice: Guessed wrong encoding
--cat: Decoded as UTF-8, showed mojibake
-##Fix
--command:scripts/fix.sh
--changed: Converted to UTF-8, changed to LF, added BOM
-## Verification
-- file after: UTF-8 (with BOM)
-- original SHA256: 919027f1f8c71d85cba3f12aad0f6c927d4e0450cfb2a2d63378a69f14cab270
-- Evidence: See evidence/opens-correctly /png
+> Declaring this costs nothing. Not declaring it, when it comes up at the
+> defence, costs the assignment.

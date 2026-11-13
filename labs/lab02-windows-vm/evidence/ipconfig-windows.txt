@@ -1,0 +1,15 @@
+C:\Users\student>ipconfig
+
+Windows IP Configuration
+
+Ethernet adapter Ethernete:
+
+Connection-specific DNS Suffix : localdomain
+
+Link-local IPv6 Address   : fe80::5df8:74f5:d8a9:4032%4
+
+IPv4 Address  : 192.168.240.130
+
+Subnet Mask  :255.255.255.0
+
+Default Gateway : 192.168.240.2

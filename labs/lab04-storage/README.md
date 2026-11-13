@@ -14,3 +14,66 @@ sudo parted /dev/sdb --script mklabel gpt mkpart lab4 1MiB 100% set 1 raid on
 sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb1 /dev/sdc1
 sudo mdadm /dev/md0 --fail /dev/sdc1
 sudo mdadm /dev/md0 --add /dev/sdd1
+Result
+
+Successfully built the RAID 1 array. Simulated a disk failure, verified data survival via checksums, and rebuilt the array using the spare disk. Windows disk was initialized as GPT, partitioned, and formatted as NTFS.
+
+Windows Output
+PS C:\WINDOWS\system32> $env:firmware_type
+UEFI
+
+PS C:\WINDOWS\system32> Get-Disk
+
+Number Friendly Name Serial Number                    HealthStatus         OperationalStatus      Total Size Partition  
+                                                                                                             Style      
+------ ------------- -------------                    ------------         -----------------      ---------- -----------
+0      VMware Vir... B74D_38EB_9DD1_02B8_000C_2960... Healthy              Online                     64 GB GPT        
+1      VMware Vir... 3233_0F71_DF22_885A_000C_2969... Healthy              Online                      2 GB GPT        
+
+PS C:\WINDOWS\system32> Get-Partition -DiskNumber 1
+
+   DiskPath: \\?\scsi#disk&ven_nvme&prod_vmware_virtual_n#5&25a13950&0&000001#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+
+PartitionNumber  DriveLetter Offset                                        Size Type
+---------------  ----------- ------                                        ---- ----
+1                            17408                                    15.98 MB Reserved
+2                E           16777216                                  1.98 GB Basic
+
+Linux Layout - before
+
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+loop0    7:0    0   1.5M  1 loop /snap/hwctl/131
+loop1    7:1    0  66.8M  1 loop /snap/core24/1643
+loop2    7:2    0   1.5M  1 loop /snap/hwctl/123
+loop3    7:3    0  50.1M  1 loop /snap/snapd/27710
+sda      8:0    0    25G  0 disk 
+├─sda1   8:1    0     1M  0 part 
+├─sda2   8:2    0     2G  0 part /boot
+└─sda3   8:3    0    23G  0 part 
+  └─ubuntu--vg-ubuntu--lv 252:0 0 11.5G 0 lvm  /
+sdb     8:16    0     2G  0 disk 
+sdc     8:32    0     2G  0 disk 
+sdd     8:48    0     2G  0 disk 
+sr0     11:0    1  1024M  0 rom
+Linux Layout - after rebuild
+
+`text
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+loop0    7:0    0   1.5M  1 loop /snap/hwctl/131
+loop1    7:1    0  66.8M  1 loop /snap/core24/1643
+loop2    7:2    0   1.5M  1 loop /snap/hwctl/123
+loop3    7:3    0  50.1M  1 loop /snap/snapd/27710
+sda      8:0    0    25G  0 disk 
+├─sda1   8:1    0     1M  0 part 
+├─sda2   8:2    0     2G  0 part /boot
+└─sda3   8:3    0    23G  0 part 
+  └─ubuntu--vg-ubuntu--lv 252:0 0 11.5G 0 lvm  /
+sdb     8:16    0     2G  0 disk 
+└─sdb1   8:17    0     2G  0 part 
+  └─md0    9:0    0     2G  0 raid1 
+sdc     8:32    0     2G  0 disk 
+└─sdc1   8:33    0     2G  0 part 
+sdd     8:48    0     2G  0 disk 
+└─sdd1   8:49    0     2G  0 part 
+  └─md0    9:0    0     2G  0 raid1 
+sr0     11:0    1  1024M  0 rom

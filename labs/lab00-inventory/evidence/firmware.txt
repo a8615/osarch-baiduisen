@@ -1,6 +1,0 @@
-﻿
-Manufacturer                            SMBIOSBIOSVersion ReleaseDate        
-------------                            ----------------- -----------        
-American Megatrends International, LLC. X133-ADN_CXLF.203 25.09.2025 05:00:00
-
-

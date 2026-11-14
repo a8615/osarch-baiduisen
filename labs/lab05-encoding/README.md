@@ -1,8 +1,8 @@
 # Lab 5 — Encoding forensics
 
 Pair:                     Driver first half:
-Machine:
-Date:
+Machine:VMware workstation PRO
+Date:13.11.2026
 
 ## What I did
 Steps, with commands in code blocks. Not prose about the steps.

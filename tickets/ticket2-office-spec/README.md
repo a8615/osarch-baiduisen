@@ -18,7 +18,6 @@ I designed four custom builds tailored to specific bottlenecks within a 3,000,00
 *(See builds.md for the detailed Load, Bottleneck, and Trade-off of each build).*
 
 ## 4. Evidence
-*(See the evidence/ folder)*
 *   budget.csv contains the exact components, models, prices in KZT, vendor URLs, and the specific dates the prices were taken (crucial because memory/SSD prices fluctuate).
 *   vendor-quotes/ contains screenshots/links proving the prices are real and deliverable in Kazakhstan.
 *   pcpartpicker-links.md contains links verifying component compatibility (e.g., CPU socket vs. Motherboard).

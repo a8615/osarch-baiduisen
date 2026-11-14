@@ -1,0 +1,6 @@
+﻿
+VirtualizationFirmwareEnabled SecondLevelAddressTranslationExtensions
+----------------------------- ---------------------------------------
+                        False                                   False
+
+

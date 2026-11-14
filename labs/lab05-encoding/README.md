@@ -1,7 +1,7 @@
 # Lab 5 — Encoding forensics
 
 Pair:                     Driver first half:
-Machine:VMware workstation PRO
+Machine:VMware workstation pro
 Date:13.11.2026
 
 ## What I did

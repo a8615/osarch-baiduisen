@@ -39,4 +39,4 @@ The Web Developer machine. As the project grows, they will run more Docker conta
 
 3. One of these four people will complain about performance within a month. Which one, and about what?
 The Designer will complain. While we bought a great GPU and monitor, 16GB of RAM is the minimum for professional design. When they open multiple large Photoshop files or use After Effects, they will experience lag and the system will start swapping to the disk. We made a deliberate trade-off to fit the budget, but it's the most likely failure point.
-*(Alternative acceptable answer: The Developer complaining that 32GB isn't enough if they run heavy virtual machines).*
+

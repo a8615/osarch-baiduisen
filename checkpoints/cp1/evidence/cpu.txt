@@ -1,0 +1,3 @@
+Name         NumberOfCores NumberOfLogicalProcessors
+----         ------------- -------------------------
+Intel(R) N95             4                         4

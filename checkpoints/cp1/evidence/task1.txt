@@ -1,1 +1,6 @@
+## Evidence
+
+- [evidence/cpu.txt](evidence/cpu.txt) — proves CPU model and core/thread count
+- [evidence/memory.txt](evidence/memory.txt) — proves number of RAM modules and their speed
+- [evidence/disk.txt](evidence/disk.txt) — proves disk model, connection type, and size
 

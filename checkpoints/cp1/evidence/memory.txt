@@ -1,0 +1,3 @@
+   Capacity Speed DeviceLocator             
+   -------- ----- -------------             
+17179869184  2667 Controller0-ChannelA-DIMM0

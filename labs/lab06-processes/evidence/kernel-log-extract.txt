@@ -1,0 +1,2 @@
+This is the log I found in the terminal after the python process died.The system killed the process because of out of memory.
+Log: [1365.102285] Out of memory: Killed process 2894 (python3) total-vm: 5097012kB,And the terminal just showed "Killed".

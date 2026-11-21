@@ -1,0 +1,3 @@
+Before: Free memory was about 4.0 Gi.
+During: Python script used up all RAM. System was very laggy. Swap increased.
+After: Python process killed. Memory is back to normal.

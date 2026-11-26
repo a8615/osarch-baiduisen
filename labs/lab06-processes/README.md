@@ -36,7 +36,7 @@ Swap:          2.0Gi       1.1Gi       0.9Gi
 $ sudo dmesg -T | grep -i "killed process"
 [1365.102285] Out of memory: Killed process 2894 (python3) total-vm:5097012kB...
 
-`
+
 
 ## Result
 

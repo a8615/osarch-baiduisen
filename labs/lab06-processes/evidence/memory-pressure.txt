@@ -1,3 +1,12 @@
-Before: Free memory was about 4.0 Gi.
-During: Python script used up all RAM. System was very laggy. Swap increased.
-After: Python process killed. Memory is back to normal.
+Before:
+Mem: 5.8Gi total, 3.8Gi free, 4.5Gi available
+Swap: 0B
+
+During:
+Memory went to 5100 MB.
+Swap increased to 1.2Gi.
+System froze.
+
+After:
+Mem: 5.8Gi total, 4.0Gi free, 4.6Gi available
+Swap: 1.1Gi

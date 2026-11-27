@@ -1,4 +1,4 @@
-[27.11.2026 19:46] Aimaral: ==== #01 ====
+ ==== #01 ====
 C:\dojo
 ==== #02 ====
 desktop-4flgefs\student
@@ -75,14 +75,10 @@ svchost.exe                    440 Services                   0     17,388 K
 svchost.exe                   2440 Services                   0     18,248 K
 svchost.exe                   5396 Services                   0     33,440 K
 ==== #18 ====
-Ping request could not find host dojo.test. Please check the name and try again.
-Ping request could not find host dojo.test. Please check the name and try again.
-==== #18 ====
 Pinging dojo.test [127.0.0.1] with 32 bytes of data:
 Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
 Ping statistics for 127.0.0.1:
     Packets: Sent = 1, Received = 1, Lost = 0 (0% loss),
-
 (After undoing the change)
 Ping request could not find host dojo.test. Please check the name and try again.
 ==== #19 ====

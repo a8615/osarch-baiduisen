@@ -1,1 +1,121 @@
+[27.11.2026 19:46] Aimaral: ==== #01 ====
+C:\dojo
+==== #02 ====
+desktop-4flgefs\student
+==== #03 ====
+A subdirectory or file C:\dojo\logs\old already exists.
+Error occurred while processing: C:\dojo\logs\old.
+A subdirectory or file C:\dojo\backup already exists.
+Error occurred while processing: C:\dojo\backup.
+==== #04 ====
+dojo started
+10:00:40.67
+dojo started
+9:55:55.38
+C:\Windows\System32\PING.EXE
+==== #05 ====
+C:\Windows\System32\PING.EXE
+==== #06 ====
+   IPv4 Address. . . . . . . . . . . : 192.168.240.130(Preferred)
+   Default Gateway . . . . . . . . . : 192.168.240.2
+   DNS Servers . . . . . . . . . . . : 192.168.240.2
+==== #07 ====
+136
+==== #08 ====
+ERROR: The process "1040" not found.
+==== #09 ====
+ERROR disk quota exceeded for user1
+==== #10 ====
+2
+==== #11 ====
+Overwrite C:\dojo\backup\app.log? (Yes/No/All): Overwrite C:\dojo\backup\app.log? (Yes/No/All): Overwrite C:\dojo\backup\app.log? (Yes/No/All): Overwrite C:\dojo\backup\app.log? (Yes/No/All): Overwrite C:\dojo\backup\app.log? (Yes/No/All):
+        0 file(s) copied.
+==== #12 ====
+Volume in drive C has no label.
+Volume Serial Number is 1853-77DB
 
+Directory of C:\
+
+File Not Found
+==== #13 ====
+gateway OK
+==== #14 ====
+1:INFO user1 login ok
+2:ERROR disk quota exceeded for user1
+3:WARN slow response for user1
+==== #15 ====
+95 aidos
+88 dana
+79 timur
+72 zarina
+61 bekzat
+==== #16 ====
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+Registry                       100 Services                   0     54,540 K
+dwm.exe                        344 Console                    1     77,812 K
+Memory Compression             772 Services                   0    108,748 K
+svchost.exe                   3044 Services                   0     52,660 K
+MsMpEng.exe                   3228 Services                   0    158,204 K
+explorer.exe                  4476 Console                    1    129,756 K
+StartMenuExperienceHost.e     5600 Console                    1     84,676 K
+SearchHost.exe                5660 Console                    1     53,064 K
+RuntimeBroker.exe             5904 Console                    1     55,376 K
+msedgewebview2.exe            6644 Console                    1     89,456 K
+msedgewebview2.exe            1416 Console                    1     70,216 K
+OneDrive.exe                  7444 Console                    1     74,396 K
+ShellExperienceHost.exe       7412 Console                    1     63,336 K
+WindowsTerminal.exe           4628 Console                    1     74,492 K
+TiWorker.exe                  8576 Services                   0    142,172 K
+==== #17 ====
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       440
+  TCP    [::]:135               [::]:0                 LISTENING       440
+wininit.exe                    672 Services                   0      9,440 K
+svchost.exe                    440 Services                   0     17,388 K
+svchost.exe                   2440 Services                   0     18,248 K
+svchost.exe                   5396 Services                   0     33,440 K
+==== #18 ====
+Ping request could not find host dojo.test. Please check the name and try again.
+Ping request could not find host dojo.test. Please check the name and try again.
+==== #18 ====
+Pinging dojo.test [127.0.0.1] with 32 bytes of data:
+Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
+Ping statistics for 127.0.0.1:
+    Packets: Sent = 1, Received = 1, Lost = 0 (0% loss),
+
+(After undoing the change)
+Ping request could not find host dojo.test. Please check the name and try again.
+==== #19 ====
+ Volume in drive C has no label.
+ Volume Serial Number is 1853-77DB
+
+ Directory of C:\dojo
+
+11/27/2026  05:14 AM                16 errors.txt
+11/26/2026  09:55 AM                27 notes.txt
+11/26/2026  09:02 PM            10,532 procs.txt
+11/26/2026  12:54 AM                51 scores.txt
+               4 File(s)         10,626 bytes
+
+ Directory of C:\dojo\backup
+
+11/26/2026  12:52 AM                91 app.log
+               1 File(s)             91 bytes
+
+ Directory of C:\dojo\evidence
+
+11/27/2026  06:05 AM             3,375 output-all-challenges.txt
+11/26/2026  08:28 PM                16 output-alll-challenges.txt
+               2 File(s)          3,391 bytes
+
+ Directory of C:\dojo\logs
+[27.11.2026 19:46] Aimaral: 11/26/2026  12:52 AM                91 app.log
+               1 File(s)             91 bytes
+
+     Total Files Listed:
+               8 File(s)         14,199 bytes
+               0 Dir(s)  36,570,632,192 bytes free
+==== #20 ====
+
+ Log File : C:\dojo\robocopy.log
+ Exit code: 0

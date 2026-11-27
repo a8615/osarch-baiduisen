@@ -44,6 +44,6 @@ For challenge 18, I had to open a new administrator command prompt to edit the h
 
 ## Evidence
 
-- [evidence/output-all-challenges.txt](evidence/output-all-challenges.txt) - Contains the text logs for all 20 challenges.
-- [evidence/screenshots/](evidence/screenshots/) - Contains the screenshots of the commands and outputs.
+- [evidence/output-all-challenges.txt](evidence/output-all-challenges.txt) - Contains the text logs for all 20 challenges
+- [evidence/](evidence/) - Contains the text logs and screenshots of the commands 
 
